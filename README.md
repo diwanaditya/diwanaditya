@@ -30,8 +30,11 @@ I build, break, and secure networked systems. I focus on full‑stack developmen
 Here are some active projects on my GitHub — click to explore.
 
 1.[SOC-ANALYSER](https://github.com/diwanaditya/SOC-ANALYSER) - A real-time SOC analysis engine for log monitoring, event correlation, and rule-based anomaly detection of known attack patterns. It handles configurable inputs across multiple log formats (e.g., syslog, Apache), automates incident report generation with structured insights, and exports data in JSON/CSV — all in a lightweight, modular Python architecture that's easily extendable for custom rules or integrations. Ideal for training environments or operational SOCs, it cuts repetitive log review by providing actionable alerts.
+
 2.[NetScope](https://github.com/diwanaditya/NetScope) — NetScope is a terminal-based tool to inspect ASNs, IP addresses, and ISPs. It provides comprehensive network intelligence in a single CLI report using multiple reliable data source.
+
 3. [PacGhost](https://github.com/diwanaditya/PacGhost) — Pacghost is a fun little terminal-based game I hacked together pretty quickly. It started as a draft experiment, but I decided to clean it up and put it here - because why not?
+
 4. [skullsays](https://github.com/diwanaditya/skullsays) — skullsays is a lightweight and fun command-line tool that displays text messages with a horror skull ASCII art.
 
 **In development:** SOC — Next‑Gen Threat Intelligence & Honeypot Engine (design, honeypots, SIEM‑style collection, and AI‑powered reporting).
