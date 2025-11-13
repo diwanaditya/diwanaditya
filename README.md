@@ -29,7 +29,7 @@ I build, break, and secure networked systems. I focus on full‑stack developmen
 
 Here are some active projects on my GitHub — click to explore.
 
-1.[System Inspector](https://github.com/diwanaditya/SysInspector)) - System Inspector is an advanced system and network monitoring application built with Python (Tkinter + psutil). It provides a visually structured and interactive dashboard to observe CPU, memory, disk, network, and system performance metrics in real-time. The tool is designed to simulate the monitoring perspective of a System Operations Center (SOC), allowing users to analyze system health, detect unusual activity, and generate reports — all through a dynamic GUI interface.
+1.[System Inspector](https://github.com/diwanaditya/SysInspector) - System Inspector is an advanced system and network monitoring application built with Python (Tkinter + psutil). It provides a visually structured and interactive dashboard to observe CPU, memory, disk, network, and system performance metrics in real-time. The tool is designed to simulate the monitoring perspective of a System Operations Center (SOC), allowing users to analyze system health, detect unusual activity, and generate reports — all through a dynamic GUI interface.
 
 2.[NetScope](https://github.com/diwanaditya/NetScope) — NetScope is a terminal-based tool to inspect ASNs, IP addresses, and ISPs. It provides comprehensive network intelligence in a single CLI report using multiple reliable data source.
 
