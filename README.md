@@ -1,6 +1,6 @@
 # Hi, I’m Aditya Diwan 👋
 
-**B.Tech (pursuing) — Computer Engineering, 7th Semester** • Full‑stack developer • Ethical hacker • Network & systems troubleshooting • ML learner
+**B.Tech (pursuing) — Computer Engineering, 7th Semester** • Full‑stack developer • Network & systems troubleshooting • ML learner
 
 ---
 
