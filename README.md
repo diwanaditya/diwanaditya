@@ -8,7 +8,7 @@
 
 I build, break, and secure networked systems. I focus on full‑stack development, offensive security, API integrations, and practical tools that help defenders and researchers understand network behaviour. I run CTFs, hunt bugs on bug‑bounty platforms, and teach through workshops.
 
-* 🔭 Currently focused on: **SOC / threat detection**, **network analysis**, **API integrations**, and **machine learning**.
+* 🔭 Currently focused on: **threat detection**, **network analysis**, **API integrations**, and **machine learning**.
 * 💻 Primary roles: **Full‑stack developer**, **ethical hacker**, **API integrator**, and **CTF challenge creator**.
 * ⚡ Learning: deeper ML concepts and their application to security analytics.
 
