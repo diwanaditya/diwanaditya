@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Diwan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white: #ffffff;
+      --off: #f7f6f3;
+      --border: #e4e2dc;
+      --text: #1a1a1a;
+      --muted: #777;
+      --light: #aaa;
+      --accent: #2a5298;
+      --serif: 'Lora', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--text);
+      font-weight: 300;
+      font-size: 15.5px;
+      line-height: 1.75;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      z-index: 50;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+
+    .nav-name {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 60px;
+      align-items: center;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 72px 40px 64px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-text h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 2.9rem);
+      font-weight: 600;
+      line-height: 1.15;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-role {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .hero-bio {
+      font-size: 0.95rem;
+      color: #444;
+      max-width: 480px;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+
+    .hero-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      padding: 5px 14px;
+      border-radius: 2px;
+      transition: all 0.18s;
+    }
+
+    .hero-links a:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .hero-card {
+      background: var(--off);
+      border: 1px solid var(--border);
+      padding: 28px;
+      font-size: 0.83rem;
+    }
+
+    .hero-card .card-label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--light);
+      margin-bottom: 14px;
+    }
+
+    .card-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .card-row:last-child { border-bottom: none; }
+    .card-row span:last-child { color: var(--text); font-weight: 400; text-align: right; }
+
+    /* ── SECTION WRAPPER ── */
+    .section {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 60px 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-of-type { border-bottom: none; }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 32px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--text);
+      display: inline-block;
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 48px;
+    }
+
+    .about-body p {
+      font-size: 0.93rem;
+      color: #444;
+      margin-bottom: 14px;
+      line-height: 1.82;
+    }
+
+    .about-side h3 {
+      font-family: var(--serif);
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      margin-top: 24px;
+    }
+
+    .about-side h3:first-child { margin-top: 0; }
+
+    .about-side ul {
+      list-style: none;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .about-side ul li {
+      padding: 4px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-side ul li:last-child { border-bottom: none; }
+
+    /* ── SKILLS ── */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    .skills-table tr { border-bottom: 1px solid var(--border); }
+    .skills-table tr:last-child { border-bottom: none; }
+
+    .skills-table td {
+      padding: 12px 0;
+      vertical-align: top;
+    }
+
+    .skills-table td:first-child {
+      width: 180px;
+      font-weight: 500;
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding-right: 24px;
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill {
+      background: var(--off);
+      border: 1px solid var(--border);
+      font-size: 0.78rem;
+      padding: 3px 10px;
+      border-radius: 2px;
+      color: var(--text);
+    }
+
+    /* ── PROJECTS ── */
+    .project-item {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+    }
+
+    .project-item:last-child { border-bottom: none; }
+
+    .project-item h3 {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .project-item h3 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .project-item h3 a:hover { color: var(--accent); }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 12px;
+    }
+
+    .project-tag {
+      font-size: 0.72rem;
+      background: #eef2fb;
+      color: var(--accent);
+      border: 1px solid #c8d5f0;
+      padding: 2px 8px;
+      border-radius: 2px;
+    }
+
+    .project-abstract {
+      font-size: 0.87rem;
+      color: #555;
+      line-height: 1.78;
+    }
+
+    .project-abstract strong {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .project-link-btn {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      padding: 5px 14px;
+      border-radius: 2px;
+      white-space: nowrap;
+      align-self: flex-start;
+      transition: all 0.18s;
+    }
+
+    .project-link-btn:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* ── RESEARCH ── */
+    .research-item {
+      padding: 28px;
+      background: var(--off);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .research-item:last-child { margin-bottom: 0; }
+
+    .research-status {
+      font-size: 0.72rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #2a7a40;
+      margin-bottom: 8px;
+    }
+
+    .research-item h3 {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .research-item p {
+      font-size: 0.87rem;
+      color: #555;
+      line-height: 1.78;
+      margin-bottom: 14px;
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 32px;
+    }
+
+    .contact-cell {
+      background: var(--white);
+      padding: 20px 24px;
+    }
+
+    .contact-label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--light);
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .contact-cell a {
+      font-size: 0.87rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-cell a:hover { text-decoration: underline; }
+
+    .contact-cell span {
+      font-size: 0.87rem;
+      color: var(--text);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 28px 40px;
+      font-size: 0.78rem;
+      color: var(--light);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 720px) {
+      nav { padding: 0 20px; }
+      .hero { grid-template-columns: 1fr; padding: 40px 20px; }
+      .hero-card { display: none; }
+      .section { padding: 40px 20px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .project-item { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .skills-table td:first-child { width: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-name">Aditya Diwan</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>ADITYA DIWAN</h1>
+      <p class="hero-role">Software Engineering Student &nbsp;·&nbsp; Systems &amp; Backend &nbsp;·&nbsp; NLP &amp; AI Research</p>
+      <p class="hero-bio">
+        I build reliable software from the ground up — backend APIs, system-level utilities, data pipelines, and NLP tooling.
+        My work sits at the intersection of performance engineering and applied machine learning,
+        with a current focus on understanding and measuring language model reliability.
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/diwanaditya" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/diwanaditya/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:diwanaditya964@gmail.com">Email Me</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="card-label">Quick Info</div>
+      <div class="card-row"><span>Status</span><span>Undergraduate Student</span></div>
+      <div class="card-row"><span>Focus</span><span>Systems &amp; Backend</span></div>
+      <div class="card-row"><span>Research</span><span>LLM Reliability</span></div>
+      <div class="card-row"><span>Primary Language</span><span>Python</span></div>
+      <div class="card-row"><span>OS</span><span>Linux (Ubuntu / Kali)</span></div>
+      <div class="card-row"><span>GitHub</span><span>diwanaditya</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section" id="about">
+    <div class="section-title">About Me</div>
+    <div class="about-grid">
+      <div class="about-body">
+        <p>
+          I am Aditya Diwan, a software engineering student with a deep interest in building systems that are
+          efficient, modular, and maintainable. My foundation in computer science — spanning data structures
+          and algorithms, operating systems, computer networks, and database management — shapes how I
+          approach every engineering problem: understand the system first, then build with clarity.
+        </p>
+        <p>
+          My technical work spans backend development in Python and C, REST API construction, asynchronous
+          processing, real-time system monitoring, and data pipeline design. I have a strong appreciation for
+          developer tooling and CLI-driven workflows, and I build software with the expectation that it will
+          need to be read, extended, and debugged by someone else later.
+        </p>
+        <p>
+          More recently, my interests have expanded into applied NLP and machine learning. I work with
+          NumPy, Pandas, spaCy, and NLTK for data processing and text analysis, and I am actively
+          conducting research into large language model reliability — specifically, detecting and measuring
+          hallucination and factual drift in model outputs. I use PyTorch, Hugging Face Transformers,
+          and Scikit-learn for this work.
+        </p>
+        <p>
+          I am preparing for software engineering roles at high-performance technical organizations, with
+          a focus on systems design, scalability, and principled engineering practice.
+        </p>
+      </div>
+      <div class="about-side">
+        <h3>Education</h3>
+        <ul>
+          <li>Software Engineering (Undergraduate)</li>
+          <li>Data Structures &amp; Algorithms</li>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+          <li>Database Management Systems</li>
+        </ul>
+        <h3>Interests</h3>
+        <ul>
+          <li>Systems programming</li>
+          <li>Backend architecture</li>
+          <li>NLP &amp; text analysis</li>
+          <li>LLM safety &amp; evaluation</li>
+          <li>CLI tooling &amp; developer UX</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section" id="skills">
+    <div class="section-title">Technical Skills</div>
+    <table class="skills-table">
+      <tr>
+        <td>Languages</td>
+        <td>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">C</span>
+            <span class="pill">Java</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Bash / Shell</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Data &amp; NLP</td>
+        <td>
+          <div class="skill-pills">
+            <span class="pill">NumPy</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Matplotlib</span>
+            <span class="pill">spaCy</span>
+            <span class="pill">NLTK</span>
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">PyTorch</span>
+            <span class="pill">HuggingFace Transformers</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Backend &amp; APIs</td>
+        <td>
+          <div class="skill-pills">
+            <span class="pill">FastAPI</span>
+            <span class="pill">REST API design</span>
+            <span class="pill">Async I/O</span>
+            <span class="pill">Concurrency</span>
+            <span class="pill">Data pipelines</span>
+            <span class="pill">OS APIs</span>
+            <span class="pill">psutil</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Tooling &amp; DevOps</td>
+        <td>
+          <div class="skill-pills">
+            <span class="pill">Git &amp; GitHub</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Linux</span>
+            <span class="pill">PyTest</span>
+            <span class="pill">Logging &amp; Debugging</span>
+            <span class="pill">VirtualBox / VMware</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Core CS</td>
+        <td>
+          <div class="skill-pills">
+            <span class="pill">DSA</span>
+            <span class="pill">Operating Systems</span>
+            <span class="pill">Computer Networks</span>
+            <span class="pill">DBMS</span>
+            <span class="pill">OOP</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section" id="projects">
+    <div class="section-title">Projects</div>
+
+    <div class="project-item">
+      <div>
+        <h3><a href="https://github.com/diwanaditya" target="_blank" rel="noopener">System Inspector</a></h3>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Async I/O</span>
+          <span class="project-tag">psutil</span>
+          <span class="project-tag">Tkinter</span>
+          <span class="project-tag">OS APIs</span>
+          <span class="project-tag">Data processing</span>
+        </div>
+        <div class="project-abstract">
+          <strong>Abstract.</strong> System Inspector is a real-time system monitoring application designed to unify CPU,
+          memory, disk, and network analysis within a single interactive dashboard. The tool collects metrics at
+          sub-second intervals using asynchronous I/O and the <code>psutil</code> library, enabling accurate, low-overhead
+          observation of system state without perturbing the processes being monitored. It implements a health scoring
+          engine that assigns numerical reliability scores to system components based on threshold-aware anomaly detection,
+          allowing users to quickly identify degraded or overloaded resources. A timeline replay module stores historical
+          snapshots in a structured in-memory buffer, enabling post-hoc inspection and root-cause analysis for performance
+          incidents. The dashboard is built with Tkinter and follows a modular component architecture, where each monitoring
+          subsystem is independently extensible. Integrated PDF reporting generates structured system summaries on demand,
+          suitable for documentation and incident reporting.
+        </div>
+      </div>
+      <a href="https://github.com/diwanaditya" class="project-link-btn" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+
+    <div class="project-item">
+      <div>
+        <h3><a href="https://github.com/diwanaditya" target="_blank" rel="noopener">NetScope</a></h3>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">REST APIs</span>
+          <span class="project-tag">JSON</span>
+          <span class="project-tag">CLI</span>
+          <span class="project-tag">Networking</span>
+        </div>
+        <div class="project-abstract">
+          <strong>Abstract.</strong> NetScope is a command-line intelligence tool for collecting structured information on
+          ASNs, IP addresses, and ISPs through multiple public APIs. The tool implements a unified request pipeline with
+          configurable retry logic and provider fallback mechanisms, ensuring reliable data retrieval even when individual
+          API endpoints are unavailable or rate-limited. At its core is an extensible data parser framework that normalizes
+          inconsistent response schemas across data sources into a common internal representation, significantly reducing
+          the complexity of downstream processing. Output is rendered in clean, formatted tables directly in the terminal,
+          optimized for rapid network assessment and investigative workflows. NetScope is designed to be composable,
+          allowing its output to feed into shell pipelines or be extended with additional data providers through a
+          well-defined plugin interface.
+        </div>
+      </div>
+      <a href="https://github.com/diwanaditya" class="project-link-btn" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+
+    <div class="project-item">
+      <div>
+        <h3><a href="https://github.com/diwanaditya" target="_blank" rel="noopener">skullsays</a></h3>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Shell scripting</span>
+          <span class="project-tag">Text processing</span>
+        </div>
+        <div class="project-abstract">
+          <strong>Abstract.</strong> skullsays is a minimal command-line utility for generating styled ASCII-art
+          messages from custom templates. It is designed with shell composability in mind, reading input from
+          stdin or arguments and writing formatted output to stdout, making it a natural fit for shell pipelines
+          and terminal scripts. The tool supports user-defined templates, enabling consistent branding or style
+          in terminal output. Despite its simplicity, skullsays reflects a deliberate focus on clean interface
+          design and Unix philosophy: do one thing, do it well, and integrate with everything else.
+        </div>
+      </div>
+      <a href="https://github.com/diwanaditya" class="project-link-btn" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- RESEARCH -->
+  <div class="section" id="research">
+    <div class="section-title">Research</div>
+
+    <div class="research-item">
+      <div class="research-status">Ongoing &nbsp;·&nbsp; 2024 – Present</div>
+      <h3>LLM Reliability and Hallucination Detection</h3>
+      <p>
+        This research investigates the conditions under which large language models generate incorrect, unsafe,
+        or factually drifted outputs — a problem commonly referred to as hallucination. The work proceeds along
+        four parallel tracks. First, semantic entropy and complementary uncertainty estimation are applied via
+        LLM APIs to detect when a model's output distribution suggests unreliable generation. Second, adversarial
+        stress testing pipelines systematically probe model failure modes by constructing challenging and
+        diverse prompt conditions designed to surface edge-case behaviors. Third, a structured risk scoring
+        framework ranks model outputs along axes of reliability, safety impact, and factual drift — providing
+        a quantitative basis for model comparison and triage. Fourth, domain-specific evaluation sets spanning
+        high-risk categories — including jailbreak probes and legal compliance queries — are used to measure
+        model robustness under realistic adversarial conditions. The technical stack includes PyTorch, Hugging Face
+        Transformers, Scikit-learn, spaCy, and NLTK.
+      </p>
+      <div class="skill-pills">
+        <span class="pill">PyTorch</span>
+        <span class="pill">HuggingFace Transformers</span>
+        <span class="pill">Scikit-learn</span>
+        <span class="pill">spaCy</span>
+        <span class="pill">NLTK</span>
+        <span class="pill">Semantic Entropy</span>
+        <span class="pill">LLM APIs</span>
+        <span class="pill">Adversarial NLP</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section" id="contact">
+    <div class="section-title">Contact</div>
+    <div class="contact-grid">
+      <div class="contact-cell">
+        <div class="contact-label">Email</div>
+        <a href="mailto:diwanaditya964@gmail.com">diwanaditya964@gmail.com</a>
+      </div>
+      <div class="contact-cell">
+        <div class="contact-label">GitHub</div>
+        <a href="https://github.com/diwanaditya" target="_blank" rel="noopener">github.com/diwanaditya</a>
+      </div>
+      <div class="contact-cell">
+        <div class="contact-label">LinkedIn</div>
+        <a href="https://www.linkedin.com/in/diwanaditya/" target="_blank" rel="noopener">linkedin.com/in/diwanaditya</a>
+      </div>
+    </div>
+    <p style="font-size: 0.85rem; color: var(--muted);">
+      Open to internships, research collaborations, and software engineering opportunities.
+      Best reached via email or LinkedIn.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 &nbsp;Aditya Diwan &nbsp;&middot;&nbsp; Built with HTML, CSS &amp; JS
+  </footer>
+
+</body>
+</html>
