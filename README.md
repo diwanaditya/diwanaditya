@@ -1,97 +1,103 @@
-# Aditya Diwan
+# Hi 👋, I'm Aditya Diwan
 
-Software Engineering student specializing in systems programming, backend development, and high-reliability tools. I focus on building efficient, modular, and maintainable software using strong foundations in computer science: Data Structures & Algorithms, Operating Systems, Computer Networks, and Database Systems.
+**AI/ML Engineer · LLM Safety Researcher · Backend Systems Developer**
 
-I enjoy designing system utilities, real-time monitoring tools, API-driven applications, and command-line interfaces that emphasize performance, clarity, and clean architecture.
-
----
-
-## About Me
-
-I approach engineering with a developer-first mindset: understand the system, design the architecture, implement with clarity, and iterate with precision. My work is centered around:
-
-- Backend development using Python, C, and SQL  
-- System-level utilities, real-time monitoring, and OS-aware tools  
-- REST API development and data pipeline construction  
-- Clean architecture, modular design, and maintainable codebases  
-- Continuous improvement through testing, debugging, and profiling  
-
-I am currently refining my skills in system design, scalability fundamentals, and deeper computer science concepts to prepare for software engineering roles at high-performance technical organizations.
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/diwanaditya)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/diwanaditya)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:diwanaditya964@gmail.com)
 
 ---
 
-## Skills
+### 📍 Ahmedabad, Gujarat, India
 
-**Languages**  
-Python (Core), C, Java , SQL, Bash/Shell
-
-**Core Computer Science**  
-Data Structures and Algorithms  
-Operating Systems  
-Computer Networks  
-Database Management Systems  
-Object-Oriented Programming  
-
-**Backend and Systems Development**  
-REST API development  
-Asynchronous processing  
-Data pipelines  
-Concurrency fundamentals  
-Performance analysis and optimization  
-
-**Developer Tools**  
-Git and GitHub  
-Docker  
-Linux (Ubuntu/Kali)  
-VirtualBox, VMware  
-PyTest (unit testing), logging, debugging  
+Computer Engineering student passionate about building **reliable, safe, and well-evaluated AI systems**.  
+Currently conducting faculty-guided research on **LLM safety evaluation** with a focus on hallucination detection, adversarial testing, and structured risk scoring.
 
 ---
 
-## Selected Projects
+## 🔬 Research Experience
 
-### System Inspector  
-A real-time system monitoring application designed to unify CPU, memory, disk, and network analysis within a single dashboard.  
-- Sub-second metric collection and visualization  
-- Health scoring and anomaly detection  
-- Timeline replay, historical analysis, and process-level insights  
-- Modular architecture for extension of monitoring capabilities  
-- Integrated PDF reporting and structured system summaries  
+**Research Student – LLM Safety Evaluation**  
+*Dec 2025 – Present*  
+**Silver Oak University, Ahmedabad**
 
-**Tech:** Python, Async I/O, OS APIs, data processing, Tkinter, psutil
-
----
-
-### NetScope  
-A command-line tool for collecting structured intelligence on ASNs, IP addresses, and ISPs through multiple public APIs.  
-- Unified request pipeline with retry and fallback logic  
-- Extensible data parser framework reducing inconsistencies across sources  
-- Clean, formatted terminal output for rapid network assessment  
-
-**Tech:** Python, REST APIs, JSON processing, CLI tooling
+- Designed a structured LLM safety evaluation framework using multiple curated question sets across diverse topics and risk categories
+- Implemented semantic entropy + complementary uncertainty estimation via LLM APIs for hallucination detection and quantification
+- Built adversarial stress testing pipelines to probe model failure modes and robustness under varied prompt conditions
+- Developed a structured risk scoring system to rank outputs by reliability, factual drift, and safety impact
 
 ---
 
-### PacGhost  
-A terminal-based interactive game built as a fast experiment in rendering, input handling, and lightweight game-loop design.
+## 🛠️ Skills
 
-**Tech:** Python, terminal rendering, input handling
+**Programming Languages**  
+Python (Expert) · C · Java · SQL · Bash/Shell
+
+**Machine Learning & AI**  
+PyTorch · Scikit-learn · TensorFlow (basics) · Hugging Face Transformers · Sentence-Transformers · LangChain · LLM Fine-Tuning (LoRA/PEFT) · Uncertainty Quantification · Semantic Entropy · Model Evaluation
+
+**Backend & Systems**  
+REST APIs · Async I/O · Data Pipelines · CLI Tools · Docker · Linux (Ubuntu/Kali) · Performance Optimization
+
+**Data & Visualization**  
+NumPy · Pandas · Matplotlib · Seaborn · SciPy · Jupyter
+
+**Core CS**  
+Data Structures & Algorithms · OOP · Operating Systems · Computer Networks · DBMS
+
+**Tools**  
+Git · GitHub · PyTest · Logging · VirtualBox · VMware
 
 ---
 
-### skullsays  
-A simple command-line utility for generating ASCII-art messages using custom templates.
+## 🚀 Featured Projects
 
-**Tech:** Python, Shell scripting, text processing
+### [System Inspector](https://github.com/diwanaditya/system-inspector) (2025)
+**Real-time Systems Dashboard**  
+Unified monitoring dashboard (CPU, memory, disk, network) with sub-second refresh + anomaly detection (40% better issue spotting). Modular plugins, timeline replay, predictive analytics & PDF reports.  
+**Tech:** Python, Async I/O, psutil, Tkinter
+
+### [NetScope](https://github.com/diwanaditya/netscope) (2025)
+**CLI Intelligence Tool**  
+Structured ASN/IP/ISP lookup tool with multi-API aggregation, retry/fallback logic and extensible parsers (70% error reduction).  
+**Tech:** Python, REST APIs, CLI, JSON
+
+### [skullsays](https://github.com/diwanaditya/skullsays) (2024)
+**ASCII Art CLI Generator**  
+Cross-platform `cowsay`-inspired message generator with modular templates.  
+**Tech:** Python, Shell Scripting
+
+*(All projects are production-quality, modular, and well-documented on my GitHub)*
 
 ---
 
-## Links
+## 🎓 Education
 
-**GitHub:** https://github.com/diwanaditya  
-**LinkedIn:** https://www.linkedin.com/in/diwanaditya/  
-**Email:** diwanaditya964@gmail.com
+**B.Tech in Computer Engineering**  
+2023 – 2026  
+Silver Oak University, Ahmedabad
+
+**Diploma in Computer Engineering**  
+2020 – 2023  
+Silver Oak University, Ahmedabad
 
 ---
 
-If you want a version with badges, a portfolio website, or a minimal academic version, I can generate those as well.
+## ✨ Highlights
+
+- Active LLM Safety Researcher (hallucination detection via semantic entropy, adversarial testing, structured risk scoring)
+- Strong hands-on experience with **PyTorch, Hugging Face, LangChain, Docker & Linux**
+- Clean, scalable, and well-tested Python codebases
+- Passionate about **safe & reliable AI systems**
+
+---
+
+**Open to collaborations, research opportunities, and exciting AI/ML projects!**  
+
+Feel free to reach out via [email](mailto:diwanaditya964@gmail.com) or [LinkedIn](https://linkedin.com/in/diwanaditya).
+
+---
+
+<div align="center">
+  <i>Building safer AI, one evaluation at a time.</i>
+</div>
